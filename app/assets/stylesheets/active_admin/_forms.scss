@@ -59,7 +59,6 @@ form {
   .has_many_container {
     .handle {
       position: absolute;
-      @include icon-size(3em);
       top: calc(50% - 3em / 2);
       right: 2px;
       padding: 0;
@@ -246,13 +245,8 @@ form {
     float:left;
     padding: 0;
 
-    &.cancel {
-      a {
-        @include light-button; @include icon(#777, 9px);
-      }
-    }
+    &.cancel a { @include light-button; }
   }
-
 }
 
 // -------------------------------------- Sidebar Forms
